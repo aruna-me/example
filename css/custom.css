@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+:root{
+    --dashed-border: 1px dashed #b2b4bb;
+    --box-shadow: 0 24px 64px rgba(217, 217, 217, .48);
+    --font-size-small: 12px;
+    --font-size-normal: 14px;
+    --font-size-large: 16px;
+    /* Fonts */
+    --PT-Sans: 'PT Sans', sans-serif;
+    --inter: 'Inter', sans-serif;
+}
+* {
+    box-sizing: border-box; margin: 0; padding: 0;
+}
+body {
+    margin: 60px 15vw;
+    font-family: var(--inter);
+}
+/* Change scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 10px;
+}
+/* Header section */
+header {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1 {
+    border: var(--dashed-border);
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+header nav ul li {
+    list-style-type: none;
+    margin: 0 20px;
+}
+header nav ul li a {
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: #130b46;
+    font-size: 14px;
+}
+header nav ul li a:hover {
+    background-color: #f6f6f9;
+    color: #130b46;
+    text-decoration: none;
+    transition: 0.3s;
+}
+header .action-button a {
+    display: inline-block;
+    border: 1px solid #130b46;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #130b46;
+}
+header .action-button a:hover {
+    background-color: #130b46;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+/* Mobile nav */
+#mob-nav {
+    display: none;
+}
+#mob-nav button {
+    border: none;
+    padding-left: 0;
+}
+#mob-nav ul {
+    margin: 0;
+    margin-left: 30px;
+    padding: 0;
+}
+#mob-nav ul li {
+    list-style-type: none;
+    margin: 30px 0;
+}
+#mob-nav ul li a:hover {
+    text-decoration: none;
+}
+/* Hero section */
+#hero-sec {
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#hero-sec .context {
+    width: 100%;
+}
+#hero-sec .context h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #39364E;
+}
+#hero-sec .context h1 + p {
+    margin-bottom: 20px;
+}
+#hero-sec .context p {
+    font-size: 16px;
+    color: #39364E;
+}
+#hero-sec .context a {
+    background-color: #ffded6;
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #130b46;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+#hero-sec .context a:hover {
+    background-color: #ffad99;
+    transition: 0.3s;
+}
+.img-sec .img-con img {
+    float: right;
+    border-radius: 20px;
+    width: 80%;
+    height: auto;
+}
+/* Reviews section */
+#review-sec {
+    margin-bottom: 60px;
+    display: flex;
+    column-gap: 15px;
+}
+#review-sec .comment {
+    border: 1px solid #eaedf0;
+    padding: 20px;
+    box-shadow: 0 24px 64px rgba(224, 224, 224, .48);
+}
+#review-sec .comment .reviewer img {
+    margin-right: 20px;
+}
+#review-sec .comment .reviewer {
+    margin-bottom: 20px;
+    height: 50px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+#review-sec .comment .reviewer img {
+    height: 100%;
+    width: auto;
+    border-radius: 50%;
+}
+#review-sec .comment .message p{
+    font-size: var(--font-size-normal);
+    line-height: 24px;
+}
+/* Sessions section */
+#sessions-sec {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+#sessions-sec .session-con {
+    border: 1px solid #f5f5f5;
+    width: 45%;
+    padding: 30px;
+}
+#sessions-sec .session-con:hover {
+    box-shadow: var(--box-shadow);
+}
+#sessions-sec .session-con .con-two img {
+    max-width: 100%;
+    height: auto;
+    margin: 30px 0;
+} 
+#sessions-sec .session-con .con-three {
+    margin-bottom: 20px;
+}
+#sessions-sec .session-con .con-three h4 {
+    margin-bottom: 20px;
+    font-size: var(--font-size-large);
+}
+#sessions-sec .session-con .con-three p {
+    margin-bottom: 30px;
+    text-align: start;
+    font-size: var(--font-size-normal);
+    line-height: 25px;
+}
+#sessions-sec .session-con .con-four .action-button {
+    background-color: rgb(224, 224, 224);
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+#sessions-sec .session-con .con-four .action-button:hover {
+    background-color: #141414;
+}
+#sessions-sec .session-con .con-four {
+    display: flex;
+    align-items: center;
+}
+#sessions-sec .session-con .con-four a {
+    color: white;
+    padding: 10px;
+}
+#sessions-sec .session-con .con-four span {
+    margin-left: 20px;
+    font-size: var(--font-size-normal);
+    font-weight: 600;
+}
+/* Contact form */
+/* Number input filed issue fix */
+/* For Chrome */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* For FireFox */
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+#contact-sec {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+#form-sec {
+    height: auto;
+    width: fit-content;
+    border: 1px solid rgb(204, 212, 214);
+    border-radius: 10px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+}
+#form-sec .input-field {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#form-sec .input-field .input-con {
+    display: flex;
+    flex-direction: column;
+}
+.margin-right {
+    margin-left: 30px;
+}
+#form-sec .input-field .input-con label {
+    margin-bottom: 8px;
+    color: #788d91;
+    font-size: 12px;
+}
+#form-sec .input-field .input-con input {
+    height: 35px;
+    width: 200px;
+    border: none;
+    border: 1px solid rgb(204, 212, 214);
+    border-radius: 8px;
+    padding: 10px;
+    outline: none;
+}
+#form-sec .input-field .input-con input[type=text]:focus,
+#form-sec .input-field .input-con input[type=email]:focus,
+#form-sec .input-field .input-con input[type=number]:focus {
+    outline: 1px solid black;
+    transition: 0.3s;
+}
+#form-sec .input-textarea {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+#form-sec .input-textarea label {
+    margin-bottom: 8px;
+    color: #788d91;
+    font-size: 12px;
+}
+#form-sec .input-textarea textarea{
+    resize: none;
+    border: 1px solid rgb(204, 212, 214);
+    border-radius: 8px;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+}
+#form-sec .input-textarea textarea:focus {
+    outline: 1px solid black;
+}
+#form-sec .message-submit button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: #1c2122;
+    color: white;
+    cursor: pointer;
+}
+/* Contact section */
+#contact {
+    margin-left: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: space-between;
+}
+#contact h4 {
+    margin-bottom: 10px;
+} 
+#contact p {
+    margin-bottom: 30px;
+}
+#contact a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #1c2122;
+    padding: 8px 15px;
+    border-radius: 30px;
+}
+.color {
+    color: #323c3e;
+}
+.margin-bottom {
+    margin-bottom: 30px;
+}
+#contact .email {
+    padding: 30px;
+    border: 1px solid rgb(204, 212, 214);
+    border-radius: 10px;
+}
+#contact .phone {
+    padding: 30px;
+    border: 1px solid rgb(204, 212, 214);
+    border-radius: 10px;
+}
+#contact .email:hover, .phone:hover {
+    background-color: #e9eced;
+    transition: all 300ms ease;
+}
+/* Email submission */
+#email-submit {
+    background-color: #ffded6;
+    margin-bottom: 40px;
+    height: 150px;
+    padding: 0 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#email-submit p {
+    text-transform: uppercase;
+    line-height: 35px;
+    color: #130b46;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#email-submit input {
+    background-color: transparent;
+    height: 45px;
+    width: 260px;
+    border: none;
+    border: 1px solid #130b46;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #130b46;
+    outline: none;
+}
+#email-submit input::placeholder {
+    color: #2f2b4d;
+}
+#email-submit button {
+    background-color: #2f2a51;
+    color: white;
+    border: none;
+    padding: 15px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 12px;
+}
